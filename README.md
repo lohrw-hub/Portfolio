@@ -1,27 +1,19 @@
-# Wesley H. Lohr engineering portfolio — GitHub Pages release
+# Wesley H. Lohr — Neurotechnology Engineering Portfolio
 
-This repository is designed to deploy as a static GitHub Pages project site. Its root contains `index.html`, `brain.html`, `amplifier.html`, and `assets/`.
+Static, multi-page website. Upload **the contents of this folder** to the root of a GitHub Pages repository, then enable Pages from `main / (root)`. No build command or dependencies are required. Open `index.html` directly for a local preview.
 
-## Publish from the GitHub website
-1. Create a **public** repository named `engineering-portfolio`.
-2. Extract this ZIP to your computer (do **not** upload the ZIP itself). Upload the **contents** to the repository root, including `index.html` and the `assets` folder.
-3. In the repository go to **Settings > Pages**. Select **Deploy from a branch** and **main / (root)**, then Save.
-4. In **Actions**, check for a successful Pages build and deployment; in **Settings > Pages**, use the displayed **Visit site** URL.
-5. A normal project-page address is `https://YOUR-GITHUB-USERNAME.github.io/engineering-portfolio/`. It will not work if the actual repository name or account differs.
+Pages: `index.html`, `human.html`, `macaque.html`, `rat.html`, `data.html`, `fixtures.html`, `electrodes.html`, `instrumentation.html`.
 
-## If you get a 404
-- Check the GitHub repository Code tab: `index.html` must be listed at top level, alongside `brain.html`, not nested in another folder.
-- Check **Settings > Pages** for branch `main` and folder `/(root)`.
-- Check **Actions** for a successful deployment and follow the actual **Visit site** link in Pages settings. Initial publication can take a few minutes.
-- The ZIP itself is not a webpage and must be extracted before upload.
-- If you are getting a 404 when attempting to download a file **from ChatGPT**, that is separate from GitHub Pages. Let the assistant know which URL shows the error.
+## Source and attribution
 
-## IP note
-This is the **public-preview edition**. It intentionally excludes the original `AMP.kicad_pcb` and `Brain.stl` design files. Interactive derived representations are still public and may themselves reveal engineering geometry; review before publishing.
+Figures are reproduced from the user's dissertation: *TMS Phantoms for Investigating Multimodal Neuromodulation Procedures*, Virginia Commonwealth University, 2026. Figure numbers are retained. User supplied the original dissertation PDF, profile photo, `AMP.kicad_pcb`, and `Brain.stl`.
 
-## Contents
-- `index.html`: landing page
-- `amplifier.html`: interactive copper layers, footprints and other PCB data
-- `brain.html`: rotatable, zoomable anatomical brain model
-- `assets/`: local CSS, SVG, JS, and preview assets. No external dependencies.
-- `.nojekyll`: prevents Jekyll processing of this static build.
+## Model fidelity
+
+The only supplied 3D mesh is an unclassified `Brain.stl`, with approximate extents 132 × 178 × 122 mm. It has NOT been explicitly identified as the human, macaque, or rat Figure 7 source mesh. A substantially reduced-detail derived model is displayed on `human.html` under an explicit provenance disclaimer. The rat and macaque pages show dissertation segmentation figures only, and their 3D-preview slots are reserved. For accurate 3D views of all three head models, obtain the corresponding original STL files and confirm provenance.
+
+## File security / downloads
+
+No download buttons or links to CAD, KiCad, STL, or the thesis PDF are included. The original source files are NOT in this website package. Images, SVG layer derivatives, and the low-detail preview mesh are loaded by the browser and can still be copied or reconstructed by technically skilled visitors. **No public website can prevent saving content rendered on a visitor's device.** For strict confidentiality, do not publish visuals that reveal protected intellectual property; use a permissioned/private solution.
+
+The profile photo and title in the header link to https://www.linkedin.com/in/wesleyhlohr/.
